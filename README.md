@@ -1,14 +1,14 @@
-Final Poject 
+# Final Poject 
 
-Sample Data:
+## Sample Data:
 ![This_is_an_image](Sample_data.png)
 
 
 
 The data I have received is a text file with json format.
-I have decided to iterate thought the lines and clean the data first, know the logics like number of rows, columns, each dictionary values and count, missing keys and values, replacing the missing keys. 
+I have decided to iterate through the lines and clean the data first, know the logics like number of rows, columns, each dictionary values and count, missing keys and values, replacing the missing keys. 
 
-Initially I wanted to count the number of dictionaries in one line and iterrating through the line
+## Initially I wanted to count the number of dictionaries in one line and iterrating through the line
 
 ```import json
 f = open("adsblog_ny0.txt.2022101800","r")
@@ -28,7 +28,7 @@ From the above trail, I got to know that each line has 3 Key-Value pairs and one
 
 
 
-To find which key difference in a dictionary whose length is 17,37,19,24 etc,. You can change the length from the above values to see the difference.
+## To find which key difference in a dictionary whose length is 17,37,19,24 etc,. You can change the length from the above values to see the difference.
 
 ```
 import json
@@ -55,7 +55,7 @@ Output:
 
 
 
-To find all the dictionaries which has flight as a key. Coverage percentage of any Key() in Payload.
+## To find all the dictionaries which has flight as a key. Coverage percentage of any Key() in Payload.
 
 ```import json
 f = open("adsblog_ny0.txt.2022101800","r")
@@ -72,7 +72,7 @@ Output: 317842
 
 
 
-Coverage percentage of any Key() in Payload.
+## Coverage percentage of any Key() in Payload.
 ```
 import json
 def coverage():
@@ -100,7 +100,7 @@ Output: Total Count of payload: 350916
 
 
 
-*Coverage for all key-value pairs in payload* 
+## *Coverage for all key-value pairs in payload* 
 
 ```
 import json
@@ -123,50 +123,50 @@ if __name__=='__main__':
     coverage()
 ```
 Output:
-hex : 100.0 %
-flight : 90.58 %
-alt_baro : 99.51 %
-alt_geom : 97.3 %
-gs : 98.27 %
-ias : 61.25 %
-tas : 60.62 %
-mach : 61.25 %
-track : 98.27 %
-track_rate : 52.5 %
-roll : 60.62 %
-mag_heading : 61.25 %
-baro_rate : 90.41 %
-geom_rate : 65.89 %
-squawk : 93.28 %
-emergency : 88.72 %
-category : 94.44 %
-nav_qnh : 84.68 %
-nav_altitude_mcp : 84.32 %
-nav_heading : 60.58 %
-lat : 95.39 %
-lon : 95.39 %
-nic : 95.39 %
-rc : 95.39 %
-seen_pos : 95.39 %
-version : 98.49 %
-nic_baro : 96.16 %
-nac_p : 97.01 %
-nac_v : 97.63 %
-sil : 97.01 %
-sil_type : 98.18 %
-gva : 93.09 %
-sda : 93.1 %
-mlat : 100.0 %
-tisb : 100.0 %
-messages : 100.0 %
-seen : 100.0 %
-rssi : 100.0 %
-nav_altitude_fms : 17.2 %
-nav_modes : 13.41 %
+- hex : 100.0 % 
+- flight : 90.58 %
+- alt_baro : 99.51 %
+- alt_geom : 97.3 %
+- gs : 98.27 %
+- ias : 61.25 %
+- tas : 60.62 %
+- mach : 61.25 %
+- track : 98.27 %
+- track_rate : 52.5 %
+- roll : 60.62 %
+- mag_heading : 61.25 %
+- baro_rate : 90.41 %
+- geom_rate : 65.89 %
+- squawk : 93.28 %
+- emergency : 88.72 %
+- category : 94.44 %
+- nav_qnh : 84.68 %
+- nav_altitude_mcp : 84.32 %
+- nav_heading : 60.58 %
+- lat : 95.39 %
+- lon : 95.39 %
+- nic : 95.39 %
+- rc : 95.39 %
+- seen_pos : 95.39 %
+- version : 98.49 %
+- nic_baro : 96.16 %
+- nac_p : 97.01 %
+- nac_v : 97.63 %
+- sil : 97.01 %
+- sil_type : 98.18 %
+- gva : 93.09 %
+- sda : 93.1 %
+- mlat : 100.0 %
+- tisb : 100.0 %
+- messages : 100.0 %
+- seen : 100.0 %
+- rssi : 100.0 %
+- nav_altitude_fms : 17.2 %
+- nav_modes : 13.41 %
 
 
 
-*Sample Printing Dictionaries having flight as key*
+## *Sample Printing Dictionaries having flight as key*
 ```import json
 with open("/Users/ksr/Downloads/New folder (19)/adsblog_ny0.txt.2022101800","r") as json_file:
     n=0
@@ -192,7 +192,7 @@ Output:
 {'type': 'new_adsb', 'dt': '2022-10-18 00:00:03.903143', 'payload': {'hex': 'acb2ba', 'flight': 'SWQ2816 ', 'alt_baro': 21175, 'alt_geom': 20475, 'gs': 412.2, 'ias': 278, 'tas': 380, 'mach': 0.62, 'track': 74.4, 'track_rate': 0.0, 'roll': -0.2, 'mag_heading': 99.3, 'baro_rate': -1024, 'geom_rate': -992, 'squawk': '2235', 'emergency': 'none', 'category': 'A3', 'nav_qnh': 1013.6, 'nav_altitude_mcp': 8000, 'nav_heading': 90.0, 'lat': 44.757602, 'lon': -75.575487, 'nic': 8, 'rc': 186, 'seen_pos': 3.2, 'version': 2, 'nic_baro': 1, 'nac_p': 10, 'nac_v': 2, 'sil': 3, 'sil_type': 'perhour', 'gva': 2, 'sda': 2, 'mlat': [], 'tisb': [], 'messages': 510, 'seen': 0.8, '
 
 # After analysing the data, Now its time to create ERD and Schema
-**After all the analysis, operations and interpretation of data, we have decided to insert the data into the DB.Here was the imp task, the data was properly formatted nor normalised nor has any primary key (Unique column to use)**
+**After all the analysis, operations and interpretation of data, I have decided to insert the data into the DB.Here was the imp task, the data was properly formatted nor normalised nor has any primary key (Unique column to use)**
 **We have decided to create own primary keys for all the table and importantly we have used Key-Values pairs.** 
 
 **Entity Relation**
@@ -209,7 +209,7 @@ Output:
 
 
 
-**Entity-Reelation Schema**
+**Entity-Relation Schema**
 ![This_is_an_image](schema.png)
 
 
@@ -342,6 +342,13 @@ conn.close()
 ```
 Sample Data in the DataBase:
 ![This_is_an_image](sampledata.png)
+
+
+## DateTime Table
+
+
+
+![This_is_an_image](sampledata2.png)
 
 # Lets do some sample Queries
 
