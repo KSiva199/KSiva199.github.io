@@ -379,7 +379,9 @@ Output:
 ![This_is_an_image](sql2.png)
 
 
-theme:Cayman
+theme: jekyll-theme-Cayman
+title: Siva's homepage
+description: Bookmark this to keep an eye on my project updates!
 
 
 
