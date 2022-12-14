@@ -10,7 +10,8 @@ I have decided to iterate through the lines and clean the data first, know the l
 
 ## Initially I wanted to count the number of dictionaries in one line and iterrating through the line
 
-```import json
+```
+import json
 f = open("adsblog_ny0.txt.2022101800","r")
 n=0
 for line in f:
